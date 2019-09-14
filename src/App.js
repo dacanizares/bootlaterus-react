@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import 'bootlaterus/dist/css/bootlaterus-cfonts.min.css';
 import './App.css';
 
+
+
 function App() {
+  const bgStyle = {
+    backgroundPosition: 'center 25%',
+    backgroundImage: 'url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1391&amp;q=80)'
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="background" style={bgStyle}>
+        <div class="bg-cf-indigo-teal min-vh-50">
+          <div class="hv-center text-white text-center text-shadow">
+            <p class="h1 font-weight-lighter">Explore · Design · Create</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
