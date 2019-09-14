@@ -1,8 +1,5 @@
 import React from 'react';
 import 'bootlaterus/dist/css/bootlaterus-cfonts.min.css';
-import './App.css';
-
-
 
 function App() {
   const bgStyle = {
