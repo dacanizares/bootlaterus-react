@@ -4,7 +4,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Header from "./Header";
+import SideNavbar from "./SideNavbar";
 import Option1 from "./pages/Option1";
 import Option2 from "./pages/Option2";
 import Home from "./pages/Home";
@@ -15,7 +15,7 @@ import 'bootlaterus/dist/css/bootlaterus-cfonts.min.css';
 function App() {
   return (
     <Router>
-      <Header />
+      <SideNavbar />
       <div className="m-navbar-side-left-sm">
         <div className="container">
           <Switch>
