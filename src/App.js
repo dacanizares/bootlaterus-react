@@ -1,22 +1,37 @@
-import React from 'react';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Header from "./Header";
+import Option1 from "./pages/Option1";
+import Option2 from "./pages/Option2";
+import Home from "./pages/Home";
+
+// Add Bootlaterus Styles
 import 'bootlaterus/dist/css/bootlaterus-cfonts.min.css';
 
 function App() {
-  const bgStyle = {
-    backgroundPosition: 'center 25%',
-    backgroundImage: 'url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1391&amp;q=80)'
-  }
-
   return (
-    <div className="App">
-      <div class="background" style={bgStyle}>
-        <div class="bg-cf-indigo-teal min-vh-50">
-          <div class="hv-center text-white text-center text-shadow">
-            <p class="h1 font-weight-lighter">Explore · Design · Create</p>
-          </div>
+    <Router>
+      <Header />
+      <div className="m-navbar-side-left-sm">
+        <div className="container">
+          <Switch>
+            <Route path="/option1">
+              <Option1 />
+            </Route>
+            <Route path="/option2">
+              <Option2 />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
