@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Collapse from 'react-bootstrap/Collapse';
 
-const SideNavbar = () => {
+const SideNavbarCollapse = () => {
   const [collapsed, setCollapsed] = useState('collapse');
   const onCollapse = () => {
     setCollapsed(collapsed === '' ? 'collapse' : '')
@@ -31,4 +31,4 @@ const SideNavbar = () => {
     </nav>
   )
 }  
-export default SideNavbar;
+export default SideNavbarCollapse;
